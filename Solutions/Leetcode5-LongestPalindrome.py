@@ -22,9 +22,3 @@ def longestPalindrome(s):
             end = i + max_len // 2
 
     return s[start:end + 1]
-
-
-print(longestPalindrome("babad"))
-print(longestPalindrome("cbbd"))
-print(longestPalindrome("a"))
-print(longestPalindrome("bbb"))
