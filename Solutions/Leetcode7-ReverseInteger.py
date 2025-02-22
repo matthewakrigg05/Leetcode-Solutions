@@ -6,8 +6,8 @@ def reverse(x):
         for i in num[::-1]:
             res += str(i)
 
-        if -2 ** 31 <= int(res) <= 2 ** 31 - 1:
-            if x < 0:
+        if -2 ** 31 <= int(res) <= 2 ** 31 - 1: # constraint outlined in the problem description, must be 32-bit int
+            if x < 0: # handling for original case of num being negative or not
                 return 0 - int(res)
             else:
                 return int(res)
